@@ -1,0 +1,55 @@
+/* pages/publish/publish.wxss */
+
+.row {
+  overflow: hidden;
+  padding: 10px;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.title {
+  line-height: 30px;
+  float: left;
+}
+
+.info {
+  margin-left: 110px;
+  line-height: 30px;
+}
+
+.info_input {
+  height: 30px;
+}
+
+radio {
+  margin-right: 10px;
+}
+
+.button_submit {
+  margin: 10px;
+  background-color: #ff9700;
+  color: #fff;
+  line-height: 48px;
+}
+
+.success {
+  background-color: #fff;
+}
+
+.msgbox {
+  text-align: center;
+  line-height: 100px;
+}
+
+.msgbox icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.button_backhome {
+  margin: 10px;
+  bottom: 10px;
+}

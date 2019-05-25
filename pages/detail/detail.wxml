@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class="row">
+    <label class="title">我的地址</label>
+    <view class="info" bindtap="txtAddress_onClick">{{address}}</view>
+  </view>
+  <view class="row">
+    <label class="title">类型</label>
+    <view class="info">
+      {{(type=="0")?"求购":"转让"}}
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">说明</label>
+    <view class="info">
+      {{info}}
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">联系方式</label>
+    <view class="info">
+      {{contact}}
+    </view>
+  </view>
+</view>

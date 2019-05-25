@@ -1,0 +1,35 @@
+<!--pages/publish/publish.wxml-->
+<view wx:if="{{!success}}">
+  <view class="row">
+    <label class="title">我的地址</label>
+    <view class="info" bindtap="txtAddress_onClick">{{address}}</view>
+  </view>
+  <view class="row">
+    <label class="title">类型</label>
+    <view class="info">
+      <radio-group bindchange="orderType_onChange">
+        <radio value="0" checked="true">求购</radio>
+        <radio value="1">转让</radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">说明</label>
+    <view class="info">
+      <input class="info_input" placeholder="填写您的具体要求" bindinput="txtInfo_onChange"></input>
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">联系方式</label>
+    <view class="info">
+      <input class="info_input" placeholder="填写您的联系方式" bindinput="txtContact_onChange"></input>
+    </view>
+  </view>
+  <button class="button_submit" bindtap="btnSubmit_onClick">发布信息</button>
+</view>
+<view class="success" wx:else>
+  <view class="msgbox">
+    <icon type="success" size="24" />恭喜，提交成功！
+    <button type="default" class="button_backhome" bindtap="btnBackHome_onClick">返回首页</button>
+  </view>
+</view>
